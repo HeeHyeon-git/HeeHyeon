@@ -96,23 +96,7 @@ public class ProductTest {
 		// jdbc,java 1До
 		// jsp, spring 2До
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 	}
 
