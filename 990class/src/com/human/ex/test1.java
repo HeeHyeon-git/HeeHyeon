@@ -70,23 +70,19 @@ class VIPCustomer extends Customer{
 }
 
 class GoldCustomer extends Customer{
-	public int agentID = 0;
-	double saleRatio = 0;
+	public String customerGrade = "GOLD";
+	public double bonusRatio = 0.025;
 	
-	GoldCustomer(){
-		customerGrade = "Gold";
-		bonusRatio = 0.025;
-		saleRatio = 0.05;
-	}
-	public GoldCustomer(int agentID, double saleRatio) {
-		super();
-		this.agentID = agentID;
-		this.saleRatio = saleRatio;
+	public GoldCustomer(int customerID, String customerName,int bonusPoint) {
+		this.customerID = customerID;
+		this.customerName = customerName;
+		this.bonusPoint = bonusPoint;
+		
 	}
 	@Override
 	public int calcPrice(int price) {
 		bonusPoint +=price * bonusRatio;
-		return price - (int)(price*saleRatio);
+		return price;
 	}
 }
 
