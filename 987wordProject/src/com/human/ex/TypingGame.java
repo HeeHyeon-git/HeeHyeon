@@ -15,7 +15,7 @@ public class TypingGame {
 	public void gameStart() {
 		String userInputName = null;
 		String userMenu = null;
-		System.out.println("TypingGame을 시작하시기 전에 이름을 입력하시오");
+		System.out.println("TypingGame을 시작하시기 전에 아이디와 패스워드를 입력하시오");
 		userInputName = sc.nextLine();
 		System.out.println("1.한글 연습  2.영어 연습  3.종료");
 		userMenu = sc.nextLine();
