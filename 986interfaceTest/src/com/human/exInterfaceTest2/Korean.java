@@ -4,10 +4,8 @@ public class Korean implements Talkable{
 
 	@Override
 	public void talk() {
+		System.out.println("æ»≥Á«œººø‰!");
+	}
 
-	}
-	public void speak() {
-		System.out.println("æ»≥Á«œººø‰");
-	}
 
 }
