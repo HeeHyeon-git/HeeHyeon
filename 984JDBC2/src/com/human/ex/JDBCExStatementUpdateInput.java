@@ -7,7 +7,7 @@ import com.human.util.DBConn;
 public class JDBCExStatementUpdateInput {
 
 	public static void main(String[] args) {
-		DBConn.getInstance();
+		DBConn.getInstance(); //DB연결
 		//사용자 입력을 받아서 데이터를 추가해보자.
 		System.out.println("no 입력");
 		int no = DBConn.inputInt();
