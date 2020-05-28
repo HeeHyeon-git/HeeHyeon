@@ -32,13 +32,13 @@ public class ShipperDelete implements ShipperExecute {
 		int shipperID=DBConn.inputInt();
 		ShipperDto dto=new ShipperDto();
 		dto.setShipperID(shipperID);
-		request.setPersonDto(dto);
+		request.setShipperDto(dto);
 		
 	}
 
 	@Override
 	public void logic(Request request,Response response) {
-		ShipperDto dto=request.getPersonDto();
+		ShipperDto dto=request.getshipperDto();
 		ShipperDao dao=new ShipperDao();
 		int i=dao.delete(dto.getShipperID());
 		response.setResultValue(i);
@@ -46,7 +46,7 @@ public class ShipperDelete implements ShipperExecute {
 
 	@Override
 	public void outputView(Request request,Response response){
-		ShipperDto req=request.getPersonDto();
+		ShipperDto req=request.getshipperDto();
 		
 		System.out.println("해운 회사 번호"+req.getShipperID()+"를 "
 		+response.getResultValue()+"개를 삭제하였습니다.");

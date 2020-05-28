@@ -9,12 +9,12 @@ public class ShipperDtoTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//insert
+//		insert
 //		ShipperDao dao = new ShipperDao();
 //		ShipperDto dto = new ShipperDto();
 //		dto.setShipperID(100);
 //		dto.setCompanyName("gh");
-//		dto.setPhone("041)324-3542");
+//		dto.setPhone("(041)324-3542");
 //		int result=dao.insert(dto);
 //		System.out.println(result);
 		

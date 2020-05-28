@@ -34,22 +34,22 @@ public class ShipperUpdate implements ShipperExecute {
 		ShipperDto dto=new ShipperDto();
 		dto.setCompanyName(companyName);
 		dto.setShipperID(shipperID);
-		request.setPersonDto(dto);
+		request.setShipperDto(dto);
 	}
 
 	@Override
 	public void logic(Request request, Response response) {
-		ShipperDto dto =request.getPersonDto();
+		ShipperDto dto =request.getshipperDto();
 		//insert
 		ShipperDao dao=new ShipperDao();
-		int i=dao.update(dto.getCompanyName(), dto.getShipperID());
+		int i=dao.update(dto.getShipperID(), dto.getCompanyName());
 		response.setResultValue(i);
 	}
 
 	@Override
 	public void outputView(Request request, Response response) {
-		System.out.println(request.getPersonDto().getShipperID()
-				+"번 데이터의 이름을 "+request.getPersonDto().getCompanyName()
+		System.out.println(request.getshipperDto().getShipperID()
+				+"번 데이터의 이름을 "+request.getshipperDto().getCompanyName()
 				+"로 "+response.getResultValue()
 				+"개 변경되었습니다.");
 	}

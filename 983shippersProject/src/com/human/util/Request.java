@@ -5,12 +5,12 @@ public class Request {
 
 	private ShipperDto shipperDto=null;
 
-	public ShipperDto getPersonDto() {
+	public ShipperDto getshipperDto() {
 		return shipperDto;
 	}
 
-	public void setPersonDto(ShipperDto personDto) {
-		this.shipperDto = personDto;
+	public void setShipperDto(ShipperDto shipperDto) {
+		this.shipperDto = shipperDto;
 	}
 	
 

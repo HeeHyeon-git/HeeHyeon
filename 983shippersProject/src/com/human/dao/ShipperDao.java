@@ -12,6 +12,7 @@ public class ShipperDao {
 		int returnValue = 0;
 		DBConn.getInstance();
 		String sql = "insert into Shippers " + "values (%d,'%s','%s')";
+		System.out.println(dto.getShipperID());
 		sql = String.format(sql, dto.getShipperID(), dto.getCompanyName(), dto.getPhone());
 		
 		System.out.println(sql);

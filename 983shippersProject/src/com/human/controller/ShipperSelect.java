@@ -41,9 +41,9 @@ public class ShipperSelect implements ShipperExecute {
 	@Override
 	public void outputView(Request request, Response response) {
 
-		System.out.println("start1");
+		//System.out.println("start1");
 		if(response!=null) {
-			System.out.println("start2");
+			//System.out.println("start2");
 			ArrayList<ShipperDto> dtos
 				=response.getArrShipperDto();
 			System.out.println("해운회사 정보는 다음과 같습니다.");
@@ -51,10 +51,10 @@ public class ShipperSelect implements ShipperExecute {
 				System.out.println(dto);
 			}
 		}else {
-			System.out.println("start3");
+			//System.out.println("start3");
 			System.out.println("해운회사가 없습니다.");
 		}
-		System.out.println("start4");
+		//System.out.println("start4");
 
 	}
 
