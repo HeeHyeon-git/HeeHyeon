@@ -6,6 +6,7 @@ public class JobsDto {
 	private int minSalary;
 	private int maxSalary;
 	private String updateItem;
+	public boolean flag = false;
 	
 	public JobsDto() {};
 	public JobsDto(String jobId, String jobTitle, int minSalary, int maxSalary, String updateItem) {
@@ -19,9 +20,13 @@ public class JobsDto {
 	
 	@Override
 	public String toString() {
-		return "JobsDto [jobId=" + jobId + ", jobTitle=" + jobTitle + ", minSalary=" + minSalary + ", maxSalary="
-				+ maxSalary + "]";
-	}
+		if(this.flag) {
+			return "JobsDto [jobId=" + jobId +  "]";
+		}else {
+			return "JobsDto [jobId=" + jobId + ", jobTitle=" + jobTitle + ", minSalary=" + minSalary + ", maxSalary="
+					+ maxSalary + "]";	
+		}
+			}
 	public String getJobId() {
 		return jobId;
 	}

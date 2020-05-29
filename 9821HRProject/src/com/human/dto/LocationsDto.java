@@ -7,6 +7,7 @@ public class LocationsDto {
 	private String city;
 	private String state_province;
 	private String country_id;
+	public boolean flag = false;
 	
 	//»ý¼ºÀÚ get,set,toString
 	public LocationsDto() {}
@@ -25,8 +26,12 @@ public class LocationsDto {
 	
 	@Override
 	public String toString() {
-		return "HrDto [location_id=" + location_id + ", street_addresssssss=" + street_address + ", postal_code=" + postal_code
+		if(this.flag) {
+			return "HrDto [location_id=" + location_id +  "]";
+		}else {
+		return "HrDto [location_id=" + location_id + ", street_address=" + street_address + ", postal_code=" + postal_code
 				+ ", city=" + city + ", state_province=" + state_province + ", country_id=" + country_id + "]";
+	}
 	}
 
 	public int getlocation_id() {
@@ -76,7 +81,4 @@ public class LocationsDto {
 	public void setcountry_id(String country_id) {
 		this.country_id = country_id;
 	}
-	
-	
-	
 }

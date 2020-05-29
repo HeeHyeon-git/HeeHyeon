@@ -7,7 +7,7 @@ import com.human.util.Response;
 public class InsertControllTest {
 
 	public static void main(String[] args) {
-		int select = 3;
+		int select = 0;
 		Response response = new Response();
 		Request request = new Request();
 
@@ -32,6 +32,16 @@ public class InsertControllTest {
 			InsertDao lDao = new InsertDao();
 			lDao.insert_locations();
 			break;
+		case 4:
+			//직무추가
+			InsertDao jDao = new InsertDao();
+			jDao.insert_jobs();
+			break;	
+		case 5:
+			//부서추가
+			InsertDao dDao = new InsertDao();
+			dDao.insert_department();
+			break;	
 		default:
 			break;
 		}

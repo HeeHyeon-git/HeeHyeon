@@ -5,6 +5,7 @@ public class DepartmentsDto {
 	private String depName;
 	private int depManager;
 	private int depLocation;
+	public boolean flag = false;
 	//»ý¼ºÀÚ
 	public DepartmentsDto() {}
 	public DepartmentsDto(int depId, String depName, int depManager, int depLocation) {
@@ -17,6 +18,9 @@ public class DepartmentsDto {
 	//toString
 	@Override
 	public String toString() {
+		if(this.flag) {
+			return "DepDto [depId=" + depId + "]";
+		}
 		return "DepDto [depId=" + depId + ", depName=" + depName + ", depManager=" + depManager + ", depLocation="
 				+ depLocation + "]";
 	}

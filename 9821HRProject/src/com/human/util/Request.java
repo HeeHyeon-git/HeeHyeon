@@ -4,8 +4,8 @@ import com.human.dto.CountriesDto;
 import com.human.dto.EmployeesDto;
 import com.human.dto.JobHistoryDto;
 import com.human.dto.JobsDto;
-import com.human.dto.RegionsDto;
 import com.human.dto.LocationsDto;
+import com.human.dto.RegionsDto;
 
 public class Request {
 	// Countries
@@ -73,4 +73,6 @@ public class Request {
 	public void setRegionsDto(RegionsDto regionsDto) {
 		this.regionsDto = regionsDto;
 	}
+
+	
 }
