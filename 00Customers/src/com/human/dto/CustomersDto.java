@@ -78,6 +78,13 @@ public class CustomersDto {
 	public void setFax(String fax) {
 		this.fax = fax;
 	}
+	@Override
+	public String toString() {
+		return "CustomersDto [customerID=" + customerID + ", companyName=" + companyName + ", contactName="
+				+ contactName + ", contactTitle=" + contactTitle + ", address=" + address + ", city=" + city
+				+ ", region=" + region + ", postalCode=" + postalCode + ", country=" + country + ", phone=" + phone
+				+ ", fax=" + fax + "]";
+	}
 	
 	
 	
